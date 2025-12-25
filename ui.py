@@ -1,6 +1,7 @@
 import streamlit as st
 import pickle
 import numpy as np
+import os
 
 # --------------------------
 # Page Config
@@ -16,10 +17,17 @@ st.write("Predict whether a customer is likely to churn based on their profile."
 # --------------------------
 # Load Model & Scaler
 # --------------------------
-with open("model.pkl", "rb") as f:
+# Get the directory of the current script
+script_dir = os.path.dirname(os.path.abspath(__file__))
+
+# Load model
+model_path = os.path.join(script_dir, "model.pkl")
+with open(model_path, "rb") as f:
     model_churn = pickle.load(f)
 
-with open("scaler.pkl", "rb") as f:
+# Load scaler
+scaler_path = os.path.join(script_dir, "scaler.pkl")
+with open(scaler_path, "rb") as f:
     scaler_churn = pickle.load(f)
 
 # --------------------------
