@@ -23,12 +23,14 @@ A machine learning project that predicts whether a customer is likely to churn b
 ## Installation
 
 1. Clone this repository:
+
 ```bash
 git clone https://github.com/yourusername/customer-churn-prediction.git
 cd customer-churn-prediction
 ```
 
 2. Install dependencies:
+
 ```bash
 pip install -r requirements.txt
 ```
@@ -52,11 +54,12 @@ jupyter notebook project.ipynb
 ## Try the Live Demo
 
 You can try the interactive web app online without installing anything:
-[Live Demo on Streamlit Cloud](https://your-streamlit-cloud-url)
+[Live Demo on Streamlit Cloud](https://customer-churn-prediction-hw4mykyvgkf78j2n2per94.streamlit.app/)
 
 ## How to Use the App
 
 1. Fill in customer profile information:
+
    - Credit Score, Age, Tenure
    - Geography and Gender
    - Account Balance and Products
